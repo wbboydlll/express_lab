@@ -5,7 +5,9 @@
 </head>
 <body>
     <h1>
-        Welcome to my Site!
+        <%= local.user || "Please log in" %>
     </h1>
+    <p><a href="/users">Users Pages</a></p>
+    <p><a href="/users">Create</a></p>
 </body>
 </html>
