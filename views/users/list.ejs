@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .user{
+            border-bottom:2px solid black;
+        }
+    </style>
+</head>
+<body>
+ <table>
+    <tr>
+    <th>First Name</td>
+    <th>Last Name</td>
+    <th>Gender</td>
+    <th>Age</td>
+    </tr>
+    <% users.forEach(user=>{ %>
+      <tr>
+        <td>
+          <%= user.firstName %>
+        </td>
+        <td>
+          <%= user.lastName %>
+        </td>
+        <td>
+          <%= user.gender %>
+        </td>
+        <td>
+          <%= user.age %>
+        </td>
+      </tr>
+      <% }); %>
+  </table>
+</body>
+</html>
